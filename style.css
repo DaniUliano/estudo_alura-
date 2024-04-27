@@ -1,0 +1,122 @@
+:root{
+    --background:#00070e;
+    --cor-secundaria: #FFFFFF;
+    --cor-terciaria:#F9F9F9;
+    --cor-botoes:#167BF7;
+    --cor-rodape: #C0C0C0;
+    --fonte-principal: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.secundario{
+    margin:  0 8em;
+}
+.principal{
+    background-image: url(./assets/Background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    text-align: center;
+}
+.container__caixa{
+    margin: 0 6em;
+
+}
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.container__img{
+    margin: 1em 0 2em 0;
+}
+.container__botao{
+    background-color: var(--cor-botoes);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-secundaria);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-secundaria);
+
+}
+.container__aviso{
+    color: var(--cor-terciaria);
+    font-size: 0.75rem;
+    
+}
+.container__descricao {
+    padding: 2em;
+}
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+.secundario__imagem {
+    width: 80%;
+  }
+.container__dispositivos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.lista__dispositivos{
+    display: flex;
+    text-align: center;
+    color:  var(--cor-secundaria);
+    list-style-type: none;
+
+}
+.rodape{
+    text-align: center;
+    margin: 5em 3em;
+}
+.rodape__img{
+    margin-bottom: 40px;
+}
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+    
+.lista__link a{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    margin-left: 1em;
+}
+.rodape__texto{
+    color: var(--cor-rodape);
+    font-size: 0.75rem;
+    margin: 1em 0;
+}
